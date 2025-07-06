@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    text-align: center;
+    margin: 15px 0;
+    background: lightgreen;
+    position: sticky;
+    top: -10%;
+    font-size: 2.5em;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 5px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input, select{
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    outline: 1px solid;
+}
+
+#description{
+    height: 50px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    outline: 1px solid;
+}
+
+
+
+input:focus, select:focus{
+    outline: 2px solid green;
+}
+
+button{
+    margin-top: 10px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    outline: 1px solid;
+    background-color: lightgreen;
+}
+
+button:hover{
+    cursor: pointer;
+    filter: brightness(0.95);
+}
+
+
+table{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 10px auto;
+}
+
+#tableHead{
+    font-weight: bold;
+}
+
+tr{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+}

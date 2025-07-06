@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Expense Tracker</h1>
+
+    <form>
+        <!-- amount -->
+        <label for="amount">
+            Choose Expense Amount:
+        </label>
+        <input type="number" id="amount" name="amount">
+
+        <!-- description -->
+        <label for="description">
+            Choose Expense Description:
+        </label>
+        <textarea name="description" id="description"></textarea>
+        <!-- <input type="text" id="description" name="description"> -->
+
+
+        <label for="category">
+            Choose Expense Category:
+        </label>
+        <select name="category" id="category">
+            <option value="daily-essentials">Daily Essentials</option>
+            <option value="housing-utilities">Housing & Utilities</option>
+            <option value="transportation">Transportation</option>
+            <option value="food-dining">Food & Dining</option>
+            <option value="entertainment">Entertainment</option>
+        </select>
+
+        <button type="submit">Add Expense</button>
+    </form>
+
+    <table>
+        <thead id="tableHead">
+            <tr>
+                <td>Serial</td>
+                <td>Amount</td>
+                <td>Description</td>
+                <td>Type</td>
+                <td>Edit</td>
+                <td>Delete</td>
+            </tr>
+        </thead>
+        <tbody id="expenseList">
+            <!-- <tr>
+                <td>1</td>
+                <td>500</td>
+                <td>Movies</td>
+                <td>Entertainment</td>
+                <td>
+                    <button type="button" class="edit-btn">Edit Expense</button>
+                </td>
+                <td>
+                    <button type="button" class="delete-btn">Delete Expense</button>
+                </td>
+            </tr> -->
+        </tbody>
+    </table>
+    <script type="module" src="index.js"></script>
+</body>
+</html>
