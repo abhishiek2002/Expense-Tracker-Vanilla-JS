@@ -148,3 +148,5 @@ function updateExpense(data) {
   }
   localStorage.setItem("expensesList", JSON.stringify(expensesList));
 }
+
+
